@@ -9,7 +9,7 @@ export const Card = React.memo(({ card, index, hovered, setHovered, onOpen }) =>
     onClick={() => onOpen(index)}
     className={cn(
       "md:rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden",
-      "h-80 md:h-96 w-full transition-transform duration-300 ease-out cursor-pointer",
+      "h-80 md:h-96 w-full md:w-auto md:basis-1/3 md:max-w-[33.333%] transition-transform duration-300 ease-out cursor-pointer",
       hovered === index && "scale-105"
     )}
   >
@@ -102,7 +102,7 @@ export function FocusCards({ cards, texto }) {
       <h2 className="text-center text-4xl pt-32 font-thin tracking-widest">
         {texto}
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-2 max-w-5xl mx-auto md:px-8 w-full mt-10">
+      <div className="grid grid-cols-1 gap-2 max-w-5xl mx-auto md:px-8 w-full mt-10 md:flex md:flex-wrap md:justify-center md:gap-4">
         {cards.map((card, index) => (
           <Card
             key={card.index}

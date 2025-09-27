@@ -137,10 +137,6 @@ const Invitacion = () => {
                       index: 5,
                       img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1758819529/ec929d9c-a555-45fe-88f6-b563dd59d8b6_z2qscr.jpg",
                     },
-                    {
-                      index: 6,
-                      img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1758819758/Disen%CC%83o_sin_ti%CC%81tulo_64_m9ye5o.jpg",
-                    }
                   ]}
                 />
             </section>
